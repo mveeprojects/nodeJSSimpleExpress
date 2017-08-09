@@ -7,7 +7,7 @@ app.get('/', function(req, res){
   res.sendFile(__dirnmame + '/index.html');
 })
 
-app.get('/process', function(req, res){
+app.get('/process_as_json', function(req, res){
   response = {
     first_name:req.query.first_name,
     last_name:req.query.last_name

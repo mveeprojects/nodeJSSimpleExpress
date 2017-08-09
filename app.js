@@ -4,7 +4,7 @@ var app = express();
 app.use(express.static('public'))
 
 app.get('/', function(req, res){
-  res.sendFile(__dirnmame + '/index.html');
+  res.sendFile(__dirname + '/index.html');
 })
 
 app.get('/process_as_json', function(req, res){
